@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string.h>
+#include<string>
+
+using namespace std;
+class student
+{
+string name="unknown";
+int age=0;
+string address="not available";
+	public:
+	 void setinfo(string n,int a)
+		{
+			name=n;
+			age=a;
+			cout<<name<<"\n"<<age<<"\n"<<address<<"\n";
+		}
+void setinfo(string n,int a,string add)
+		{
+			name=n;
+			age=a;
+			address=add;
+			cout<<name<<"\n"<<age<<"\n"<<address<<"\n";
+		}
+};
+
+int main()
+{
+student o1;
+o1.setinfo("Kushagra",20);
+cout<<endl<<endl;
+o1.setinfo("Kushagra",20,"Ghaziabad");
+}
