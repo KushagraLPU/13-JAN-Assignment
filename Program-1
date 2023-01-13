@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class Rectangle
+{
+	int l,w;
+	public:
+		Rectangle()
+		{ l=0;w=0;
+		cout<<"Area="<<l*w<<endl ;
+		}
+		Rectangle(int a,int b)
+		{
+			l=a;w=b;
+			cout<<"Area="<<l*w<<endl;
+		}
+		Rectangle(int a)
+		{
+			l=a;w=a;
+			cout<<"Area="<<l*w<<endl;
+		}
+};
+
+int main()
+{
+Rectangle o1;
+Rectangle o2(6,12);
+Rectangle o3(6);
+}
