@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string.h>
+#include<string>
+
+using namespace std;
+class pro2
+{
+	public:
+	pro2()
+		{ 
+		cout<<"I love programming languages"<<endl ;
+		}
+	pro2(char str[])
+		{
+			cout<<"I love "<<str<<endl;
+		}
+	};
+
+int main()
+{
+ pro2 o1;
+ char s[100];
+ cin>>s;
+pro2 o2(s);
+}
