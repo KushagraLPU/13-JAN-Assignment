@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class area
+{
+	int l,w,s;
+	public:
+	
+		area(int a,int b)
+		{
+			l=a;w=b;
+			cout<<"Area of rectangle ="<<l*w<<endl;
+		}
+		area(int a)
+		{
+			s=a;
+			cout<<"Area of square="<<s*s<<endl;
+		}
+};
+
+int main()
+{
+area o1(6,12);
+area o2(6);
+}
