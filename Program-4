@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class parent
+{
+
+	public:
+	int i;
+	 void printnum()
+		{
+			cout<<"the no is "<<i<<endl;
+		}
+};
+class child:public parent
+{
+
+	public:
+	int j;
+	void printnum()
+		{
+		
+			cout<<"the no is "<<j<<endl;
+		}
+};
+
+int main()
+{
+child o1;
+o1.i=10;
+o1.j=20;
+o1.printnum();
+}
